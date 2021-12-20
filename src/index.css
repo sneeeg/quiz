@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #fef6fd;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.btn-grad {
+	background-image: linear-gradient(
+		to right,
+		#9733ee 0%,
+		#da22ff 51%,
+		#9733ee 100%
+	);
+	transition: 0.5s;
+	background-size: 200% auto;
+}
+
+.btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
+.answer-button {
+	background-position: right center;
+	color: #082e3c;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in-out;
+	background-size: 200% auto;
+}
+
+.answer-button > span {
+	transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.answer-button > span:first-child {
+	color: #5586d3;
+	background-color: #bccceb;
+}
+
+.answer-button > span:last-child {
+	color: #082e3c;
+}
+
+.answer-button.active > span:first-child {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.answer-button.active > span:last-child {
+	color: #fff;
+}
+
+.answer-button.active {
+	background-color: #9551f5;
+}
